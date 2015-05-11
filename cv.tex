@@ -1,0 +1,257 @@
+% packages
+\documentclass{resume2}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage[left=0.8in,top=0.8in,right=1.4in,bottom=0.8in,nofoot]{geometry}
+
+\usepackage{amsmath}
+\usepackage{slashed}
+
+\pagestyle{empty}
+
+% begin
+\begin{document}
+
+\name{\huge{Alexander Tuna}}
+\address{\Large{curriculum vitae}}
+
+\begin{resume}
+
+% contact
+\sectionX{Contact information}
+\vspace{0.2cm}
+
+\hspace{-0.2cm}\begin{tabular}{l l}
+E-mail & \underline{\color{blue}{\url{tuna@cern.ch}}} \\
+Phone (US) & (336) 749-8522 \\
+Phone (CH) & +41 076 487 9012 \\
+Address & 209 S. 33rd St. \\
+        & David Rittenhouse Laboratories \\
+        & Philadelphia, PA 19104 \\
+\end{tabular}
+
+% education section
+\sectionX{Education}
+\vspace{0.2cm}
+
+% penn
+\textbf{University of Pennsylvania}, Philadelphia, Pennsylvania. 2010 - present. \\
+Ph.D. in Physics, April 2015 \\
+Dissertation topic: \textit{Evidence for $H\!\rightarrow\!\tau\tau$ at ATLAS} \\
+Advisor: Prof. Hugh ``Brig'' Williams \\
+M.S. in Physics, May 2014
+
+% duke
+\textbf{Duke University}, Durham, North Carolina. 2006 - 2010. \\
+B.S. in Physics, minor in Mathematics, May 2010 \\
+Senior thesis: \textit{Search for Fractionally-Charged Particles at Super-Kamiokande} \\
+Advisor: Prof. Chris Walter \\
+Daphne Chang Memorial Award for outstanding undergraduate research
+
+% research section
+\sectionX{Research}
+\vspace{0.2cm}
+
+% atlas
+\textbf{ATLAS Experiment} at the LHC, Geneva, Switzerland. 2010 - present.
+\begin{itemize}
+
+\item Ph.D. student for the Penn ATLAS Group
+\item Evidence for $H\!\rightarrow\!\tau\tau$ (2013 - present) [1, 3, 5]
+  \begin{itemize}
+  \item I led the development of the data-driven prediction of the dominant background ($j\!\rightarrow\!\tau_h$ fakes) for the $H\!\rightarrow\!\tau_\ell\tau_h$ channel. The prediction was made more data-driven by including $Z+j$ and $t\overline{t}$ processes, and the systematic uncertainties were reduced from 20-40\% to 5\% with comprehensive tests of the model and by tightening the extrapolation region.
+  \item I revamped the $\tau_h$ identification criteria, which led to 10\% improvement in signal acceptance and increased rejection of $\mu\!\rightarrow\!\tau_h$ fakes.
+  \item I am a core developer of the analysis software for the $H\!\rightarrow\!\tau_\ell\tau_h$ channel, which is used for all official results since summer 2013. 
+  \item I am the liaison to the harmonization group and trigger group, and have helped coordinate discussion with the electron performance group, muon performance group, $\slashed{E}_{\text{T}}$ performance group, and derivation framework developers.
+  \item A preliminary version of this analysis was presented at a CERN seminar in autumn 2013 [3] and reported first ever evidence ($4.1\sigma$) of $H\!\rightarrow\!\tau\tau$ decays. A publication describing the final analysis is currently in progress [1].
+  \end{itemize}
+
+\item Tau triggers for Run-II (2013 - present)
+  \begin{itemize}
+  \item I am leading the development of the tau trigger menu for Run-II.
+  \item I investigated using topological variables at L1 as an early adopter of \texttt{L1topo}. I found $\Delta R(\tau, \tau)$ can be used to significantly reduce the L1 rate for di-$\tau_\text{h}$ triggers with negligible physics loss.
+  \item I developed the new $p_\text{T}$-dependent L1 isolation menu which recovers significant efficiency loss at high $p_\text{T}^\tau$.
+  \item These will be the primary triggers in 2015 for the $H\!\rightarrow\!\tau_\text{h}\tau_\text{h}$ and $HH\!\rightarrow\!bb\tau_\text{h}\tau_\text{h}$ analyses, among others.
+  \end{itemize}
+
+\item TRT DAQ (2014 - present)
+  \begin{itemize}
+  \item I am part of the TRT DAQ team preparing for data-taking in 2015 and beyond, when the L1 accept rate will increase from 75 kHz to 100 kHz and the TRT occupancy will increase according to pile-up.
+  \item I am helping monitor the performance of off-detector electronics and on-detector power supplies, and to replace them as necessary.
+  \item The TRT has successfully recorded cosmic data events in recent ``milestone weeks'', and the TRT Fast-OR trigger has provided cosmic data events to the rest of ATLAS.
+  \end{itemize}
+
+\item Prospects for $H\!\rightarrow\!\tau\tau$ at the HL-LHC (2014 - present) [8]
+  \begin{itemize}
+  \item I am responsible for investigating prospects for measuring VBF $H\!\rightarrow\!\tau\tau$ at HL-LHC conditions: 14 TeV, $3000\text{ fb}^{-1}$, and $\mu = 140$.
+  \item This is part of a broader effort to evaluate the physics case of a forward tracker ($|\eta| > 2.5$) being considered for Phase-II upgrades.
+  \item The impact of forward pile-up suppression had significant impact on the analysis -- the uncertainty on the measurement ($\Delta\mu$) was improved from 24\% to 8\% with pile-up suppression of VBF jets via forward tracking, providing general motivation for forward tracking for VBF analyses.
+  \item This study was presented at the European Committee for Future Accelerators (ECFA) High Luminosity LHC Experiments Workshop in late 2014 [8].
+  \end{itemize}
+
+\item Tau performance: $e\!\rightarrow\!\tau_\text{h}$ discriminant development and efficiency measurement (2012 - 2013) [2, 4]
+  \begin{itemize}
+  \item I measured the efficiency of the preliminary $e\!\rightarrow\!\tau_\text{h}$ discriminant (``electron veto'') in data and simulation using $Z \!\rightarrow\! ee$ $(e\!\rightarrow\!\tau_\text{h})$ tag-and-probe. This BDT-based discriminant is commonly used in analyses with $\tau_\text{h}$ since electrons typically pass the $j\rightarrow\tau_\text{h}$ discriminant. 
+  \item I uncovered a mis-modeling of the energy leakage in the third layer of the EM calorimeter for $e\!\rightarrow\!\tau_\text{h}$ fakes with $|\eta| > 2$, and this propagated to a difference in the performance of the discriminant in data versus simulation of $\sim\!10\times$.
+  \item To ameliorate this mis-modeling, I derived a well-modeled replacement for the offending variable and re-trained the $e\!\rightarrow\!\tau_\text{h}$ discriminant. I additionally pruned the variable list for redundancy and retrieved high-statistics samples for training, such that the updated discriminant was better modeled and more performant with fewer input variables.
+  \item I measured the efficiency of the updated $e\!\rightarrow\!\tau_\text{h}$ discriminant in data and simulation with the same methods. I also observed $e\!\rightarrow\!\tau_{h,3p}$ fakes from ``trident'' electrons for the first time, and I measured the efficiency of these to pass the discriminant in data and simulation.
+  \item This work was presented in a preliminary description of tau performance at ATLAS in summer 2013 [4]. A publication describing tau performance is currently in progress [2].
+  \end{itemize}
+
+\item Search for $Z' \!\rightarrow\! \tau\tau$ (2011 - 2012) [6, 7]
+  \begin{itemize}
+  \item I developed and performed a search for a new heavy neutral boson ($Z'$) decaying to $\tau_{\ell}\tau_\text{h}$ in collaboration with Ryan Reece. This was the first search for heavy resonances decaying to tau(s) at ATLAS.
+  \item We developed novel background estimation techniques for $j\!\rightarrow\!\tau_\text{h}$ fakes (``fakefactors'') which are now commonly used among analyses with $\tau_\text{h}$ in the final state.
+  \item I uncovered issues with tau performance at high $p_{\text{T}}$, including a non-optimal tuning of the $e\!\rightarrow\!\tau_\text{h}$ fakes discriminant, which I re-tuned, and the issue of mis-classification of 3-prong $\tau_\text{h}$ as 2-track due to the merging of closeby tracks, which is an unresolved issue for high $p_{\text{T}}$ tracking.
+  \item A preliminary version of this analysis was presented at ICHEP in summer 2012 [7] in combination with the $\tau_\text{h}\tau_\text{h}$ and $\tau_{\ell}\tau_{\ell}$ channels. The final analysis was published in Phys. Lett. B in late 2012 [6] and set the strongest limit on SSM $Z'\!\rightarrow\!\tau\tau$ decays at the time of publication.
+  \end{itemize}
+
+\end{itemize}
+
+\pagebreak
+
+% super-k
+\textbf{Super-Kamiokande}, Kamioka, Japan. 2007 - 2010.
+\begin{itemize}
+\item I worked as an undergraduate researcher for Prof. Chris Walter of the Duke Neutrino Group for three years (excluding summer 2009).
+\item I developed and performed a search for fractionally-charged particles (FCP) in the cosmic rays at the Super-Kamiokande water Cherenkov detector.  
+  \begin{itemize}
+  \item I modified Monte Carlo simulation programs and particle reconstruction algorithms to accurately simulate FCP at Super-K.
+  \item The search over a partial SK-II dataset placed a limit on the flux of FCP which was competitive with previous searches.
+  \end{itemize}
+\item I helped build cables for SK-IV electronics upgrade.
+\end{itemize}
+
+\sectionX{}
+
+% super-k
+\textbf{CERN Technology Department}, Geneva, Switzerland. 2009.
+\begin{itemize}
+\item I worked as a summer student for Dr. Michael Koratzinos in the CERN TE-MPE group as part of the Michigan CERN REU for 3 months.
+\item I helped identify potential problems in the super-conducting magnets of the LHC by exploring the temperature dependence of the resistance of the copper busbars.
+\end{itemize}
+
+% other shit
+\sectionX{Work}
+\vspace{0.2cm}
+
+% TA
+\textbf{University of Pennsylvania}, Philadelphia, Pennsylvania \\
+Teaching Assistant, Department of Physics and Astronomy (four semesters, 2010-2012) \\
+I taught labs and graded homework, exams, and labs for four semesters of introductory undergraduate courses in Newtonian mechanics and electromagnetism.
+
+\sectionX{}
+
+% mather
+\textbf{AIP Mather Policy Internship Program}, Washington, DC \\
+Intern, Office of Congressman Bill Foster D-IL14 (summer 2010) \\
+I helped the legistlative staff with constituent correspondence and services. I also attended hearings in Congress regarding science policy and provided summaries to the staff.
+
+% public shit
+\sectionX{Presentations}
+\vspace{0.6cm}
+\begin{itemize}[leftmargin=*]
+  % \item \textit{Higgs bosons and tau leptons at ATLAS}. University of Chicago HEP Lunch Seminars. Chicago, June 2015.
+  \item \textit{Higgs bosons and tau leptons at ATLAS}. University of Pennsylvania Experimental Particle Physics Seminars. Philadelphia, April 2015.
+  \item \textit{Evidence for $H\rightarrow\tau\tau$ at ATLAS}. 50th Rencontres de Moriond (EW). La Thuile, March 2015.
+  \item \textit{Evidence for $H\rightarrow\tau\tau$ at ATLAS}. University of Pittsburgh PITT PACC Seminar. Pittsburgh, January 2015.
+  \item \textit{Prospects for Higgs searches in the ditau channel in Run 2 at ATLAS}. US ATLAS Physics Workshop 2014. Seattle, Washington, August 2014. {\color{red}{ATLAS Internal}}.
+  \item \textit{Searches for decays of the Higgs-like boson to tau lepton pairs with the ATLAS detector}. Meeting of the American Physical Society Division of Particles and Fields. Santa Cruz, California, August 2013.
+  \item \textit{Searches for decays of a Higgs boson to tau lepton pairs with the ATLAS detector} (poster). 26th International Symposium on Lepton Photon Interactions at High Energies. San Francisco, California, June 2013.
+  \item \textit{Performance of Tau Reconstruction and Identification in 2012 with ATLAS} (poster). 113th LHCC Meeting. Geneva, Switzerland, March 2013.
+\end{itemize}
+
+\pagebreak
+
+% references
+\sectionX{References}
+\vspace{0.5cm}
+\noindent\begin{tabular}{l l}
+Prof. Hugh ``Brig'' Williams & Mary Amanda Wood Professor, Department of Physics, University of Pennsylvania \\
+                             & \underline{\color{blue}{\url{williams@physics.upenn.edu}}} \\
+                             & (215) 898-6284 \\
+& \\
+Prof. Elliot Lipeles & Associate Professor, Department of Physics, University of Pennsylvania \\
+                     & \underline{\color{blue}{\url{lipeles@hep.upenn.edu}}} \\
+                     & (215) 573-3652 \\
+& \\
+Prof. Sinead Farrington & Associate Professor, Department of Physics, University of Warwick \\
+                        & Co-Convener, ATLAS $H\!\rightarrow\!\tau\tau$ analysis group (2013 - present) \\
+                        & \underline{\color{blue}{\url{sinead.farrington@cern.ch}}} \\
+                        & +44 (0)2476 528044 \\
+& \\
+Prof. Attilio Andreazza & Professor, Dipartimento di Fisica, Universit\`{a} degli studi di Milano \\
+                        & Co-Convener, ATLAS Tau Combined Performance group (2013 - present) \\
+                        & \underline{\color{blue}{\url{attilio.andreazza@unimi.it}}} \\
+                        & +39 02503 17375 \\
+& \\
+\end{tabular}
+
+% other shit
+\sectionX{Selected publications}
+\vspace{-0.8cm}
+\renewcommand{\refname}{\selectfont\normalsize}
+\begin{thebibliography}{9}
+\bibitem{htautaupaper}
+  ATLAS Collaboration.
+  \textit{Evidence for the Higgs-boson Yukawa coupling to tau leptons with the ATLAS detector}. 
+  \href{http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-32/}{\underline{\color{blue}{\texttt{HIGG-2013-32}}}}. 
+  JHEP 04 (2015) 117.
+  April 2015.
+\bibitem{taupaper}
+  ATLAS Collaboration.
+  \textit{Identification and energy calibration of hadronically decaying tau leptons with the ATLAS experiment in $pp$ collisions at $\sqrt{s}$ = 8 TeV}. 
+  \href{http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/PERF-2013-06/}{\underline{\color{blue}{\texttt{PERF-2013-06}}}}.
+  Submitted to EPJC.
+  December 2014.
+\bibitem{htautauLHCC}
+  ATLAS Collaboration.
+  \textit{Evidence for Higgs Boson Decays to the $\tau^{+}\tau^{-}$ Final State with the ATLAS Detector}. 
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2013-108/}{\underline{\color{blue}{\texttt{ATLAS-CONF-2013-108}}}}. 
+  November 2013. 
+\bibitem{tauconf}
+  ATLAS Collaboration.
+  \textit{Identification of Hadronic Decays of Tau Leptons in 2012 Data with the ATLAS Detector}. 
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2013-064/}{\underline{\color{blue}{\texttt{ATLAS-CONF-2013-064}}}}. 
+  July 2013. 
+\bibitem{htautauHCP}
+  ATLAS Collaboration.
+  \textit{Search for the Standard Model Higgs boson in $H\!\rightarrow\!\tau^{+}\tau^{-}$ decays in proton-proton collisions with the ATLAS detector}. 
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-160/}{\underline{\color{blue}{\texttt{ATLAS-CONF-2012-160}}}}. 
+  November 2012. 
+\bibitem{zprimepaper}
+  ATLAS Collaboration.
+  \textit{A search for high-mass resonances decaying to $\tau^{+}\tau^{-}$ in pp collisions at $\sqrt{s}$ = 7 TeV with the ATLAS detector}. 
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2012-03/}{\underline{\color{blue}{\texttt{EXOT-2012-03}}}}. 
+  Phys. Lett. B 719 (2013) 242-260. 
+  October 2012.
+\bibitem{zprimeconf}
+  ATLAS Collaboration.
+  \textit{A search for high mass resonances decaying to $\tau^{+}\tau^{-}$ in the ATLAS detector}. 
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-067/}{\underline{\color{blue}{\texttt{ATLAS-CONF-2012-067}}}}. 
+  June 2012.
+\bibitem{tautauhllhc}
+  ATLAS Collaboration.
+  \textit{Studies of the VBF $\ensuremath{H\rightarrow\tau_\ell\tau_\text{h}}$ analysis at High Luminosity LHC Conditions}.
+  \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2014-018/}{\underline{\color{blue}{\texttt{ATL-PHYS-PUB-2014-018}}}}. 
+  October 2014.
+\end{thebibliography}
+
+%\sectionX{Publications}
+%\vspace{0.6cm}
+%\begin{itemize}[leftmargin=*]
+%  \item \textit{Evidence for Higgs-Boson Yukawa couplings in the $H\!\rightarrow\!\tau^{+}\tau^{-}$ decay mode with the ATLAS detector} (in progress). \href{https://cds.cern.ch/record/1693466}{\underline{\color{blue}{ATLAS-HIGG-2013-32}}}. {\color{red}{ATLAS Internal}}. 
+%  \item \textit{Identification and Energy Calibration of Hadronically-decaying Tau Leptons with the ATLAS Experiment in $pp$ Collisions at $\sqrt{s}$ = 8 TeV} (in progress). \href{https://cds.cern.ch/record/1747796}{\underline{\color{blue}{ATLAS-PERF-2013-06}}}. {\color{red}{ATLAS Internal}}.
+%  \item \textit{Evidence for Higgs Boson Decays to the $\tau^{+}\tau^{-}$ Final State with the ATLAS Detector}. \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2013-108/}{\underline{\color{blue}{ATLAS-CONF-2013-108}}}. November 2013. 
+%  \item \textit{Identification of Hadronic Decays of Tau Leptons in 2012 Data with the ATLAS Detector}. \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2013-064/}{\underline{\color{blue}{ATLAS-CONF-2013-064}}}. July 2013. 
+%  \item \textit{Search for the Standard Model Higgs boson in $H\!\rightarrow\!\tau^{+}\tau^{-}$ decays in proton-proton collisions with the ATLAS detector}. \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-160/}{\underline{\color{blue}{ATLAS-CONF-2012-160}}}. November 2012. 
+%  \item \textit{A search for high-mass resonances decaying to $\tau^{+}\tau^{-}$ in pp collisions at $\sqrt{s}$ = 7 TeV with the ATLAS detector}. \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2012-03/}{\underline{\color{blue}{EXOT-2012-03}}}. Phys. Lett. B 719 (2013) 242-260, arXiv:1210.6604 [hep-ex]. October 2012.
+%  \item \textit{A search for high mass resonances decaying to $\tau^{+}\tau^{-}$ in the ATLAS detector}. \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-067/}{\underline{\color{blue}{ATLAS-CONF-2012-067}}}. June 2012.
+%\end{itemize}
+
+% end 
+\end{resume}
+\end{document}
+
+
